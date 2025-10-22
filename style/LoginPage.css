@@ -1,0 +1,124 @@
+.overall {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.login-in-div {
+    background-color: rgba(255, 255, 255, 0.557);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px 0px 0px 10px;
+    margin-bottom: 100px;
+
+}
+
+.login-in-div-image-div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: flex-end;
+
+}
+
+.login-in-div-image-div::after {
+    content: "";
+    position: absolute;
+    bottom: -59px;
+    left: 0;
+    width: 100%;
+    height: 245px;
+    background: linear-gradient(to bottom, rgba(211, 176, 129, 0) 30%, rgba(211, 176, 129, 0.9) 27%, #ffffff 70%);
+    z-index: -8;
+}
+
+.poster-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -10;
+}
+
+
+.beans-image {
+    position: absolute;
+    height: 300px;
+    width: 267px;
+    top: 34%;
+    left: -2%;
+    z-index: -9;
+
+}
+
+.beans-image-reverse {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 43%;
+    right: -11%;
+    z-index: -7;
+
+}
+
+.beans-coffe-cup {
+    position: absolute;
+    height: 220px;
+    width: 160px;
+    top: 49%;
+    left: 27%;
+    z-index: -9;
+}
+
+.front-page-heading {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    font-weight: 100;
+}
+
+.aedae {
+    top: 85%;
+}
+
+
+
+.Sign-up-button {
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Form Css */
+.form {
+    margin-top: 100px;
+}
+
+.form-create-account {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fieldset-border {
+    border: none;
+    margin: 20px 0px;
+}
+
+.input-box-form {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(230, 228, 228);
+    border: none;
+    margin-top: 10px;
+}
