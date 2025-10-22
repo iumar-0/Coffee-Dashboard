@@ -48,4 +48,4 @@ export function loginPageAnimation() {
             console.log("finshed second")
         }
     }, 2);
-}
+};
