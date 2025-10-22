@@ -1,3 +1,4 @@
+
 * {
     padding: 0px;
     margin: 0px;
@@ -22,7 +23,6 @@ body {
     align-items: center;
 }
 
-h1{
+h1 {
     display: flex;
-    align-items: ;
 }

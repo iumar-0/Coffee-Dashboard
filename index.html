@@ -7,20 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/LoginPage.css">
+    <link rel="stylesheet" href="style/loader.css">
 </head>
 
 <body>
+    <div rel="preload" class="loader-class">
+        <div class="loader"></div>
+    </div>
+    <div class="overall" style="display: none;">
+        <div rel="preload" class="login-in-div-image-div flex-center">
 
-    <div class="overall">
-        <div class="login-in-div-image-div flex-center">
-            <img class="poster-image" src="image/coffee poster.png" alt="">
-            <img class="beans-image" src="image/coffee beans.webp" alt="">
-            <img class="beans-image-reverse" src="image/coffee beans.webp" alt="">
-            <img class="beans-coffe-cup" src="image/coffee cup.webp" alt="">
-            <h1 class="front-page-heading">COFFEE</h1>
-            <h3 class="front-page-heading aedae">The taste began</h3>
-            <object data="image/arrow.svg" type="image/svg+xml" height="50" width="50">
-            </object>
+            <div rel="preload" class="login-in-div-image-div-heading">
+                <h3 class="id-coffe-land">COFFE LAND</h3>
+                <H1>ICED</H1>
+                <img rel="preload" class="img-beans" src="image/coffee beans.webp" alt="">
+                <img rel="preload" class="img-beans-right" src="image/coffee beans.webp" alt="">
+                <img rel="preload" class="coffe-cup-image" src="image/coffee cup.webp" alt="">
+            </div>
+            <div rel="preload" class="float-text">
+                <h1 class="front-page-heading">COFFEE</h1>
+                <h4 class="front-page-heading aedae">The taste began</h4>
+                <object data="image/arrow.svg" type="image/svg+xml" height="50" width="50"></object>
+            </div>
 
 
         </div>
@@ -28,7 +36,7 @@
         <div class="login-in-div flex-center">
 
             <!-- form div -->
-            <div class="form">
+            <div loading="lazy" class="form">
                 <div class="form-create-account">
                     <h1 style="text-align: start;">Create an account</h1>
                     <form action="" id="create-account-form">
@@ -74,8 +82,10 @@
 
     </div>
 
-
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script type="module" src="script/script.js"></script>
+
 </body>
 
 </html>

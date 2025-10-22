@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
 .overall {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     position: relative;
+}
+
+object {
+    position: relative;
+    z-index: 2;
 }
 
 .login-in-div {
@@ -19,76 +28,84 @@
 .login-in-div-image-div {
     width: 100%;
     height: 100%;
-    position: relative;
-    align-items: flex-end;
+    background-color: #d3b081;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 
+}
+
+.login-in-div-image-div-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.login-in-div-image-div-heading h1 {
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 350px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -20px;
 }
 
 .login-in-div-image-div::after {
     content: "";
     position: absolute;
-    bottom: -59px;
+    bottom: -55px;
     left: 0;
     width: 100%;
     height: 245px;
     background: linear-gradient(to bottom, rgba(211, 176, 129, 0) 30%, rgba(211, 176, 129, 0.9) 27%, #ffffff 70%);
-    z-index: -8;
+    z-index: 1;
 }
 
-.poster-image {
+.float-text {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    z-index: -10;
+    bottom: 5px;
 }
 
-
-.beans-image {
-    position: absolute;
-    height: 300px;
-    width: 267px;
-    top: 34%;
-    left: -2%;
-    z-index: -9;
-
-}
-
-.beans-image-reverse {
-    position: absolute;
-    width: 250px;
-    height: 300px;
-    top: 43%;
-    right: -11%;
-    z-index: -7;
-
-}
-
-.beans-coffe-cup {
-    position: absolute;
-    height: 220px;
-    width: 160px;
-    top: 49%;
-    left: 27%;
-    z-index: -9;
-}
-
-.front-page-heading {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: fantasy;
+.float-text>h1,
+h4 {
+    font-family: "DM Serif Text", serif;
     font-weight: 100;
+    position: relative;
+    z-index: 2;
+    margin: 5px;
 }
 
-.aedae {
-    top: 85%;
+.float-text object {
+    height: 30px;
 }
 
+.img-beans {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    height: 400px;
+    z-index: 5;
+}
 
+.img-beans-right {
+    position: absolute;
+    top: -5%;
+    right: 40%;
+    height: 400px;
+    z-index: 3;
+}
 
+.coffe-cup-image {
+    position: absolute;
+    height: 300px;
+    top: 80px;
+    z-index: 4;
+}
+
+/* Login button */
 .Sign-up-button {
     border: none;
     cursor: pointer;
