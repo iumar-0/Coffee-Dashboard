@@ -4,7 +4,7 @@ export function loginPageAnimation() {
 
     timeline.from(".coffee-land-heading ", {
         y: -100,
-        duration: 2,
+        duration: 2.5,
         opacity: 0,
         ease: "expo.out",
         onComplete: () => {
